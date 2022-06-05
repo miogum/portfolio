@@ -1,0 +1,56 @@
+* {
+  margin: 0;
+  padding: 0;
+  color: var(--text-color);
+}
+
+:root {
+  --background-color: #efecca;
+  --text-color: #575053;
+  --accent-color: #fd934f;
+  --secondary-color: #a9cbb7;
+}
+
+.home {
+  background-color: var(--background-color);
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding: 5em;
+}
+
+.about {
+  height: 100vh;
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+}
+
+.skills {
+  background-color: var(--secondary-color);
+  padding: 5em;
+  position: relative;
+  top: 25%;
+}
+
+.projects {
+  height: 100vh;
+  background-color: #efecca;
+}
+
+ul {
+  list-style: none;
+  display: flex;
+  justify-content: space-between;
+}
+
+h2 {
+  font-size: 48px;
+  padding: 30px;
+}
+
+img {
+  max-height: 200px;
+}
