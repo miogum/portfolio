@@ -19,6 +19,39 @@
     <meta name="description" content="NEED TO FILL THIS OUT" />
   </head>
   <body>
+       <!-- navbar -->
+      <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Navbar</a>
+          <button
+            class="navbar-toggler"
+            type="button"
+            data-bs-toggle="collapse"
+            data-bs-target="#navbarNav"
+            aria-controls="navbarNav"
+            aria-expanded="false"
+            aria-label="Toggle navigation"
+          >
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#projects">Projects</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#contact">Contact</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
     <!-- homepage -->
     <div class="container-fluid home">
       <h1>
@@ -26,121 +59,125 @@
         <br />
         and I enjoy building websites
       </h1>
-      <!-- light dark mode toggle-->
-      <div class="light-dark">
+      <div class="container links">
+        <a href="#projects">Projects</a>
+        <a href="#contact">Contact Me</a>
+           <!-- light dark mode toggle-->
+        <div class="light-dark">
         <div class="form-check form-switch">
             <input class="form-check-input" type="checkbox" id="flexSwitchCheckChecked" checked>
             <label class="form-check-label" for="flexSwitchCheckChecked"></label>
         </div>
       </div>
+      </div>   
     </div>
     <!-- end of homepage -->
-    <!-- navbar -->
-    <nav class="navbar navbar-expand-lg navbar-light bg-light">
-      <div class="container-fluid">
-        <a class="navbar-brand" href="#">Navbar</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNav"
-          aria-controls="navbarNav"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
-            <li class="nav-item">
-              <a class="nav-link active" aria-current="page" href="#">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">About</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Projects</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="#">Contact</a>
-            </li>
-          </ul>
-        </div>
-      </div>
-    </nav>
-    <!-- about page -->
-    <div class="container-fluid about">
+      <div class="container-fluid about" id="about">
+      <!-- about page -->
       <h2 class="" >ABOUT</h2>
       <div class="row d-flex justify-content-center">
-        <p class="col-4">
+        <p class="col-10 col-md-6">
         Front end developer nased in London. Lorem, ipsum dolor sit amet
         consectetur adipisicing elit. Dicta tempora voluptatum provident vero
         rerum facilis ipsam illum facere at sunt?
       </p>
-      <div class="skills">
-        <ul>
-          <li>
+     
+        <ul class="col-12 row skills">
+          
+
+          <li class="col-3 col-sm-1">
             <i class="fa-brands fa-js"></i>
             <p>JavaSacipt</p>
           </li>
-          <li>
+          <li class="col-3 col-sm-1">
             <i class="fa-brands fa-html5"></i>
             <p>HTML 5</p>
           </li>
-          <li>
+          <li class="col-3 col-sm-1">
             <i class="fa-brands fa-css3-alt"></i>
             <p>CSS</p>
           </li>
-          <li>
+          <li class="col-3 col-sm-1">
             <i class="fa-brands fa-python"></i>
             <p>Python</p>
           </li>
-          <li>
+          <li class="col-3 col-sm-1">
             <i class="fa-solid fa-database"></i>
             <p>SQL</p>
           </li>
-          <li>
+          <li class="col-3 col-sm-1">
             <i class="fa-brands fa-bootstrap"></i>
             <p>Bootstrap</p>
           </li>
-          <li>
+          <li class="col-3 col-sm-1">
             <i class="fa-brands fa-react"></i>
             <p>React</p>
           </li>
-          <li>
+          <li class="col-3 col-sm-1">
             <i class="fa-brands fa-node-js"></i>
             <p>Node JS</p>
           </li>
-          <li>
-            <i class="fa-brands fa-git-square"></i>
-            <p>Git</p>
-          </li>
+
+          </div>
+         
+          
         </ul>
+        </div>
+      
       </div>
-      </div>
-    </div>
     <!-- end of about page -->
     <!-- project page -->
-    <div class="container-fluid projects">
+    <div class="container-fluid projects" id="projects">
       <h2>PROJECTS</h2>
-      <div class="row">
-        <div class="col-6 project-1">
-          <img src="/images/project.jpg" alt="project" class="img-fluid" />
+      <div class="row justify-content-center">
+        <div class="col-md-5 col-12 project">
+          <img src="/images/project.jpg" 
+          alt="project" class="img-fluid" />
+          <div class="row hide">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, asperiores? Temporibus veritatis corporis velit accusamus, eius culpa nobis doloremque quos.</p>
+            <div class="project-links">
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="col-6 project-2">
-          <img src="/images/project.jpg" alt="project" class="img-fluid" />
+        <div class="col-md-5 col-12 project">
+          <img src="/images/woman-coding.jpg" 
+          alt="project" class="img-fluid" />
+          <div class="row hide">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, asperiores? Temporibus veritatis corporis velit accusamus, eius culpa nobis doloremque quos.</p>
+            <div class="project-links">
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="col-6 project-3">
-          <img src="/images/project.jpg" alt="project" class="img-fluid" />
+        <div class="col-md-5 col-12 project">
+          <img src="/images/project.jpg" 
+          alt="project" class="img-fluid" />
+          <div class="row hide">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, asperiores? Temporibus veritatis corporis velit accusamus, eius culpa nobis doloremque quos.</p>
+            <div class="project-links">
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
         </div>
-        <div class="col-6 project-4">
-          <img src="/images/project.jpg" alt="project" class="img-fluid" />
+        <div class="col-md-5 col-12 project">
+          <img src="/images/woman-coding.jpg" 
+          alt="project" class="img-fluid" />
+          <div class="row hide">
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. A, asperiores? Temporibus veritatis corporis velit accusamus, eius culpa nobis doloremque quos.</p>
+            <div class="project-links">
+              <a href=""><i class="fa-solid fa-arrow-up-right-from-square"></i></a>
+              <a href=""><i class="fa-brands fa-github"></i></a>
+            </div>
+          </div>
         </div>
-      </div>
     </div>
     <!-- end of project page -->
     <!-- contact page -->
-    <div class="container-fluid contact">
+    <div class="container-fluid contact links" id="contact">
       <h2>GET IN TOUCH</h2>
       <p>
         Drop me an email at
@@ -148,9 +185,9 @@
         <br>
         or find me on social media
       </p>
-      <div class="h3">
+      <div>
         <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-        <a href="#"><i class="fa-brands fa-github"></i></i></a>
+        <a href="#"><i class="fa-brands fa-github"></i></a>
       </div>
     </div>
     <!-- end of contact page -->
