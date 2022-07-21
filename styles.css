@@ -5,20 +5,39 @@
 }
 
 :root {
-  --background-color: #efecca;
-  --text-color: #575053;
-  --accent-color: #fd934f;
-  --secondary-color: #a9cbb7;
+  --background-color: #1b110f;
+  --text-color: #d0a099;
+  --accent-color: #d3fbd8;
+  --secondary-color: #89726e;
+}
+
+.parralax {
+  background-image: url(images/pexels-walid-ahmad-847402.jpg);
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+}
+
+body,
+html {
+  height: 100%;
 }
 
 .home {
-  background-color: var(--background-color);
-  height: 100vh;
+  min-height: 100vh;
+  position: relative;
   display: flex;
   flex-direction: column;
   justify-content: center;
+  align-items: center;
   padding: 5em;
 }
+
+/* strong{
+  font-family: 'Yomogi', cursive;
+} */
 
 .about {
   background-color: var(--background-color);
@@ -29,14 +48,13 @@
   padding-top: 80px;
 }
 
-.main {
+h1 fade .main {
   padding: 0;
 }
 
 .skills {
   background-color: var(--secondary-color);
   padding: 3em;
-  bottom: 25%;
   position: relative;
   top: 100px;
 }
@@ -47,7 +65,7 @@ i {
 
 .projects {
   height: 100vh;
-  background-color: var(--background-color);
+  background-color: var(--secondary-color);
   text-align: center;
   padding-top: 80px;
   flex-direction: column;
@@ -62,7 +80,7 @@ ul {
 }
 
 h2 {
-  font-size: 48px;
+  font-size: 72px;
   padding: 30px;
 }
 
@@ -99,9 +117,9 @@ img {
   width: min-content;
 }
 
-img:hover {
+.project:hover img {
   transition: 0.5s;
-  filter: brightness(20%);
+  filter: grayscale(100%);
 }
 
 .project:hover .hide {
@@ -110,13 +128,12 @@ img:hover {
 
 .hide {
   opacity: 0;
-  position: relative;
   width: 400px;
 }
 
 .hide p,
 .hide i {
-  color: #fd934f;
+  color: var(--accent-color);
 }
 
 .contact {
@@ -155,3 +172,11 @@ img:hover {
 .pr-row {
   margin: 0;
 } */
+
+.logo {
+  height: 1.5em;
+}
+
+.bg {
+  background-color: none;
+}
