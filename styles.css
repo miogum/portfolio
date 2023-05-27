@@ -20,9 +20,13 @@
   height: 100%;
 }
 
-body,
-html {
-  height: 100%;
+html,
+body {
+  width: 100%;
+  height: auto;
+  margin: 0px;
+  padding: 0px;
+  overflow-x: hidden;
 }
 
 .home {
@@ -34,10 +38,6 @@ html {
   align-items: center;
   padding: 5em;
 }
-
-/* strong{
-  font-family: 'Yomogi', cursive;
-} */
 
 .about {
   background-color: var(--background-color);
@@ -52,7 +52,8 @@ h1 fade .main {
   padding: 0;
 }
 
-.skills {
+.skills,
+.contact {
   background-color: var(--secondary-color);
   padding: 3em;
   position: relative;
@@ -67,7 +68,7 @@ i {
   height: 100vh;
   background-color: var(--secondary-color);
   text-align: center;
-  padding-top: 80px;
+  /* padding-top: 80px; */
   flex-direction: column;
 }
 
@@ -94,6 +95,13 @@ h2 {
   margin: 0;
   padding: 0;
   display: flex;
+  text-align: center;
+}
+
+.container,
+.links {
+  width: 535px;
+  justify-content: flex-start;
 }
 
 .links,
@@ -111,27 +119,28 @@ a {
 img {
   border-radius: 8px;
   max-height: 250px;
+  left: 0px;
+  top: 0px;
+  z-index: 1;
 }
 
 .project {
   width: min-content;
+  height: 600pxt;
 }
 
-.project:hover img {
-  transition: 0.5s;
+.project:hover img,
+.project:hover i,
+.project:hover .app-title {
+  transition: 0.3s;
   filter: grayscale(100%);
-}
-
-.project:hover .hide {
-  opacity: 1;
+  transform: scale(1.07);
 }
 
 .hide {
-  opacity: 0;
   width: 400px;
 }
 
-.hide p,
 .hide i {
   color: var(--accent-color);
 }
@@ -139,6 +148,8 @@ img {
 .contact {
   flex-direction: column;
 }
+
+/* OPTIMIZATION FOR PHONES */
 
 @media (max-width: 768px) {
   .home {
@@ -149,34 +160,109 @@ img {
     max-height: 60%;
   }
 
-  .project {
-    height: 600pxt;
-  }
-
   .hide {
     opacity: 1;
     width: 350px;
   }
+
+  .pr-row,
+  .contact {
+    padding: 0;
+    margin: 0;
+  }
+
+  h2 {
+    font-size: 3em;
+  }
+
+  .links {
+    display: flex;
+    justify-items: end;
+  }
+
+  #footer {
+    font-size: 25px;
+  }
 }
-/* 
+
+/* OPTIMIZATION FOR LARGE MONITOR */
+@media (max-width: 1200px) {
+  .container,
+  .links {
+    justify-content: center;
+  }
+}
+
+/* OPTIMIZATION FOR 4K MONITOR */
 @media (min-width: 3500px) {
   h1 {
     font-size: 10em;
   }
 
-  h2 {
-    font-size: 6em;
+  .container,
+  .links {
+    font-size: 3em;
   }
 }
 
-.pr-row {
-  margin: 0;
-} */
-
 .logo {
-  height: 1.5em;
+  height: 3em;
 }
 
 .bg {
   background-color: none;
+}
+
+.nav-link {
+  color: var(--accent-color) !important;
+}
+
+.navbar-toggler {
+  background-color: var(--secondary-color) !important;
+}
+
+#contact {
+  width: 100%;
+  text-align: center;
+}
+
+.projects {
+  overflow-x: hidden;
+}
+
+.sm-icons {
+  padding-bottom: 30px;
+}
+
+.nav-item {
+  justify-content: flex-end;
+}
+
+#navbarNav {
+  display: flex;
+  justify-self: flex-end;
+}
+
+.project-title {
+  padding-top: 100px;
+}
+
+.app-title {
+  color: var(--accent-color);
+  padding-top: 20px;
+}
+
+.project-description {
+  color: var(--background-color);
+}
+
+.project-links {
+  display: flex;
+  justify-content: space-around;
+  padding: 0px 70px;
+}
+
+#footer {
+  font-size: 45px;
+  padding: 0;
 }
