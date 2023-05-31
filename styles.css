@@ -28,6 +28,7 @@ body {
   padding: 0px;
   background-color: var(--secondary-color);
   overflow-x: hidden;
+  overflow-y: scroll;
 }
 
 .home {
@@ -109,9 +110,12 @@ a {
   color: var(--accent-color);
 }
 
-img {
+.logo {
   border-radius: 8px;
-  max-height: 250px;
+}
+.project-img {
+  border-radius: 8px;
+  height: 230px;
   left: 0px;
   top: 0px;
   z-index: 1;
@@ -123,11 +127,17 @@ img {
 }
 
 .project:hover img,
-.project:hover i,
+.fa-solid:hover,
+.fa-brands:hover,
 .project:hover .app-title {
-  transition: 0.3s;
+  transition: 0.25s;
   filter: grayscale(100%);
   transform: scale(1.07);
+}
+
+.fa-solid:hover,
+.fa-brands:hover {
+  filter: grayscale(100%);
 }
 
 .hide {
@@ -175,6 +185,7 @@ img {
 
   #footer {
     font-size: 25px;
+    align-self: center;
   }
 
   .project:hover img,
@@ -310,22 +321,25 @@ img {
   padding: 0;
 }
 
-.contact-form {
+.contact-form,
+.contact-heading {
   align-self: center;
+}
+
+.contact-heading h1 {
+  font-size: 4.5em;
+  padding-right: 20px;
 }
 
 label {
   color: var(--accent-color);
 }
 
-#contact-page {
-  background-color: var(--background-color) !important;
-}
-
 #projects {
   background-color: var(--secondary-color);
   text-align: center;
   flex-direction: column;
+  height: 100vh;
 }
 
 body > .about {
@@ -335,8 +349,10 @@ body > .about {
 #contact-page {
   height: 100vh;
   width: 100vw;
-  display: flex;
-  /* flex-direction: column; */
-  justify-content: center;
-  align-content: center;
+  background-color: var(--background-color) !important;
+}
+
+.submit-btn {
+  width: 100px;
+  margin-left: 12px;
 }
