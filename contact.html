@@ -24,9 +24,8 @@
     ></script>
   </head>
   <body>
-    <div id="contact-page">
+    <div id="contact-page" class="">
       <!-- navbar -->
-
       <nav class="navbar navbar-expand-lg navbar-dark">
         <div class="container-fluid">
           <a class="navbar-brand" href="index.html" class="logo"
@@ -63,44 +62,70 @@
           </div>
         </div>
       </nav>
-
       <!-- end of navbar -->
-      <h3 class="my-info"></h3>
-      <div class="container contact-section w-100 h-100 d-flex">
-        <div class="row contact-heading col-10 col-md-6">
-          <h1>Let's start a project together</h1>
+
+      <div class="container contacting w-100">
+        <div class="row h-100">
+          <div class="contact-heading col-8 col-md-6">
+            <h1>Let's start a project together</h1>
+          </div>
+          <form class="row contact-form col-10 col-md-6">
+            <div class="mb-3">
+              <label for="text" class="form-label">Name</label>
+              <input
+                type="text"
+                class="form-control"
+                id="exampleFormControlInput1"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="email-input" class="form-label">Email address</label>
+              <input
+                type="email"
+                class="form-control"
+                id="exampleFormControlInput1"
+                placeholder="name@example.com"
+              />
+            </div>
+            <div class="mb-3">
+              <label for="message-input" class="form-label">Message</label>
+              <textarea
+                class="form-control"
+                id="exampleFormControlTextarea1"
+                rows="3"
+              ></textarea>
+            </div>
+            <button
+              type="submit"
+              class="btn btn-primary form-control submit-btn"
+            >
+              Submit
+            </button>
+          </form>
         </div>
-        <!-- start of contact form -->
-        <form class="row contact-form col-10 col-md-6">
-          <div class="mb-3">
-            <label for="text" class="form-label">Name</label>
-            <input
-              type="text"
-              class="form-control"
-              id="exampleFormControlInput1"
-            />
+        <div class="row d-flex justify-content-center">
+          <div class="container-fluid contact links d-flex
+          justify-content-center" id="contact">
+          <h2 id="footer">GET IN TOUCH</h2>
+          <p>
+            Drop me an email at
+            <a href="mailti:michelle.umolo@gmail.com"
+              >michelle.umolo@gmail.com</a
+            >
+            <br />
+            or find me on social media
+          </p>
+          <div class="sm-icons">
+            <a
+              href="https://www.linkedin.com/in/michelle-umolo-909a6b232/"
+              target="_blank"
+              ><i class="fa-brands fa-linkedin"></i
+            ></a>
+            <a href="https://github.com/miogum" target="_blank"
+              ><i class="fa-brands fa-github"></i
+            ></a>
           </div>
-          <div class="mb-3">
-            <label for="email-input" class="form-label">Email address</label>
-            <input
-              type="email"
-              class="form-control"
-              id="exampleFormControlInput1"
-              placeholder="name@example.com"
-            />
-          </div>
-          <div class="mb-3">
-            <label for="message-input" class="form-label">Message</label>
-            <textarea
-              class="form-control"
-              id="exampleFormControlTextarea1"
-              rows="3"
-            ></textarea>
-          </div>
-          <button type="submit" class="btn btn-primary form-control submit-btn">
-            Submit
-          </button>
-        </form>
+        </div>
       </div>
     </div>
   </body>
