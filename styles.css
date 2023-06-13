@@ -112,6 +112,10 @@ a {
   color: var(--accent-color);
 }
 
+i:hover > .sm-icons {
+  color: var(--accent-color);
+}
+
 .logo {
   border-radius: 8px;
 }
@@ -129,8 +133,6 @@ a {
 }
 
 .project:hover img,
-.fa-solid:hover,
-.fa-brands:hover,
 .project:hover .app-title {
   transition: 0.25s;
   filter: grayscale(100%);
@@ -139,7 +141,7 @@ a {
 
 .fa-solid:hover,
 .fa-brands:hover {
-  filter: grayscale(100%);
+  color: white;
 }
 
 .hide {
@@ -370,4 +372,15 @@ body > .contact-page {
 
 .contacting {
   padding-top: 5%;
+}
+
+.btn-primary {
+  background-color: var(--secondary-color);
+  color: var(--accent-color);
+  border: #d3fbd8;
+}
+
+.btn-primary:hover {
+  color: var(--secondary-color);
+  background-color: var(--accent-color);
 }
