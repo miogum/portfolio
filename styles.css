@@ -226,6 +226,10 @@ i:hover > .sm-icons {
   .navbar-custom {
     background-color: #272727 !important;
   }
+
+  .contact-heading {
+    padding-top: 20%;
+  }
 }
 
 /* OPTIMIZATION FOR 4K MONITOR */
