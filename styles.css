@@ -200,9 +200,17 @@ i:hover > .sm-icons {
     text-align: center;
   }
 
+  .contact-page {
+    display: flex;
+    flex-direction: row;
+  }
+
   .contacting {
     display: flex;
     justify-content: center;
+  }
+  .parralax {
+    background-image: url(images/pexels-walid-ahmad-847402.jpg);
   }
 }
 
@@ -255,20 +263,6 @@ i:hover > .sm-icons {
   width: 100vw;
   padding: 15px 20px;
 }
-/* 
-.navbar-dark .navbar-toggler {
-  border-color: transparent;
-  outline-color: var(--accent-color) !important;
-} */
-/* 
-.navbar-toggler-icon {
-  background-image: url(
-    data:image/svg + xml,
-    %3csvgxmlns="http://www.w3.org/2000/svg"viewBox="0 0 30 30"%3e%3cpathstroke="rgba%28255, 255, 255, 0.55%29"stroke-linecap="round"stroke-miterlimit="10"stroke-width="2"d="M4 7h22M4 15h22M4 23h22"/%3e%3c/svg%3e
-  );
-} */
-
-/* Modify the background color */
 
 /*changed class-name*/
 .bg-custom {
@@ -293,6 +287,10 @@ i:hover > .sm-icons {
 .navbar-custom .nav-item.active .nav-link,
 .navbar-custom .nav-item:hover .nav-link {
   color: white;
+}
+
+.active {
+  font-weight: 900;
 }
 
 /* end of nav */
