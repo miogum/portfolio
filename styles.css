@@ -211,6 +211,8 @@ i:hover > .sm-icons {
   }
   .parralax {
     background-image: url(images/pexels-walid-ahmad-847402.jpg);
+    height: 100vh;
+    width: 100vw;
   }
 }
 
