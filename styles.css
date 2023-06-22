@@ -27,7 +27,7 @@ body {
   height: auto;
   margin: 0px;
   padding: 0px;
-  background-color: var(--secondary-color);
+  background-color: var(--background-color);
   overflow-x: hidden;
   overflow-y: scroll;
 }
@@ -232,6 +232,10 @@ i:hover > .sm-icons {
   }
 }
 
+.main-page {
+  background-color: var(--secondary-color) !important;
+}
+
 /* OPTIMIZATION FOR 4K MONITOR */
 @media (min-width: 3500px) {
   h1 {
@@ -304,10 +308,6 @@ i:hover > .sm-icons {
 
 .sm-icons {
   padding-bottom: 20px;
-}
-
-.project-title {
-  padding-top: 100px;
 }
 
 .app-title {
